@@ -24,10 +24,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:fontFamily="@font/montserrat_semibold"
-        android:textAlignment="center"
-        android:textColor="@color/primary_theme_color"
         android:textSize="24sp"
+        style="@style/primary_title"
         android:text="@string/app_tag_line"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,14 +33,9 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/nextButton"
-        android:layout_width="240dp"
-        android:layout_height="60dp"
+        style="@style/primary_button"
         android:layout_marginBottom="40dp"
-        android:background="@drawable/gradient_button"
-        android:fontFamily="@font/montserrat_bold"
         android:text="@string/start_screen_next_button"
-        android:textColor="@color/secondary_theme_color"
-        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
