@@ -2,6 +2,7 @@
     <string name="app_name">Khaana Kart</string>
     <string name="primary_logo_desc">Primary Application Logo</string>
     <string name="secondary_logo_desc">Secondary Application Logo</string>
+    <string name="notification_logo_desc">Notification Logo</string>
     <string name="app_slogan">Fresh Flavors, Fast</string>
     <string name="app_designed_by_text">Developed by \n Arghadeep</string>
     <string name="app_tag_line">Taste the Tradition,\nDelivered with Care</string>
@@ -23,4 +24,12 @@
     <string name="choose_location_text">Choose Your Location</string>
     <string name="auto_complete_placeholder">-- Select --</string>
     <string name="location_access_message">** Please select your location from the dropdown menu. This app does not access your device\'s GPS.</string>
+    <string name="home_bottom_nav_item">Home</string>
+    <string name="cart_bottom_nav_item">Cart</string>
+    <string name="search_bottom_nav_item">Search</string>
+    <string name="history_bottom_nav_item">History</string>
+    <string name="profile_bottom_nav_item">Profile</string>
+    <string name="explore_food_text">Explore Your Favorite Food</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
