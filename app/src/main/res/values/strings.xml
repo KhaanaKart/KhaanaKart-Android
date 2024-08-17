@@ -35,5 +35,7 @@
     <string name="add_to_cart_button_text">Add To Cart</string>
     <string name="placeholder_string_text">Placeholder Text</string>
     <string name="placeholder_double_text">17.99</string>
+    <string name="placeholder_int_text">17</string>
     <string name="placeholder_image_desc">Placeholder Image</string>
+    <string name="proceed_button_text">Proceed</string>
 </resources>

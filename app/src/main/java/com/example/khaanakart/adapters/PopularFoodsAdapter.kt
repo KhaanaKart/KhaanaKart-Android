@@ -5,9 +5,9 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.khaanakart.adapters.PopularFoodsAdapter.PopularFoodsViewHolder
 import com.example.khaanakart.databinding.PopularListItemBinding
-import com.example.khaanakart.models.PopularFoodItem
+import com.example.khaanakart.models.FoodItemModel
 
-class PopularFoodsAdapter(private val foodList: List<PopularFoodItem>): RecyclerView.Adapter<PopularFoodsViewHolder>() {
+class PopularFoodsAdapter(private val foodList: List<FoodItemModel>): RecyclerView.Adapter<PopularFoodsViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PopularFoodsViewHolder {
         return PopularFoodsViewHolder(PopularListItemBinding.inflate(LayoutInflater.from(parent.context), parent, false))

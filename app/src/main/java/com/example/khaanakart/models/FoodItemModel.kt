@@ -1,6 +1,6 @@
 package com.example.khaanakart.models
 
-data class PopularFoodItem(
+data class FoodItemModel(
     val name: String,
     val price: Double,
     val imageResId: Int

@@ -13,7 +13,7 @@ import com.denzcoskun.imageslider.models.SlideModel
 import com.example.khaanakart.R
 import com.example.khaanakart.adapters.PopularFoodsAdapter
 import com.example.khaanakart.databinding.FragmentHomeBinding
-import com.example.khaanakart.models.PopularFoodItem
+import com.example.khaanakart.models.FoodItemModel
 
 class HomeFragment : Fragment() {
 
@@ -53,19 +53,18 @@ class HomeFragment : Fragment() {
 
             override fun onItemSelected(position: Int) {
                 val itemMessage = "Selected Image $position"
-
                 Toast.makeText(requireContext(), itemMessage, Toast.LENGTH_SHORT).show()
             }
 
         })
 
         val foodList = listOf(
-            PopularFoodItem("Burger", 8.99, R.drawable.burger),
-            PopularFoodItem("Sandwich", 6.99, R.drawable.sandwich),
-            PopularFoodItem("Chow Mein", 11.99, R.drawable.chowmein),
-            PopularFoodItem("Salad", 8.99, R.drawable.salad),
-            PopularFoodItem("Samosa", 4.99, R.drawable.samosa),
-            PopularFoodItem("Omelette", 7.99, R.drawable.omelette)
+            FoodItemModel("Burger", 8.99, R.drawable.burger),
+            FoodItemModel("Sandwich", 6.99, R.drawable.sandwich),
+            FoodItemModel("Chow Mein", 11.99, R.drawable.chowmein),
+            FoodItemModel("Salad", 8.99, R.drawable.salad),
+            FoodItemModel("Samosa", 4.99, R.drawable.samosa),
+            FoodItemModel("Omelette", 7.99, R.drawable.omelette)
         )
 
         val adapter = PopularFoodsAdapter(foodList)
