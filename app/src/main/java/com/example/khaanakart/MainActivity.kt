@@ -3,9 +3,6 @@ package com.example.khaanakart
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -17,8 +14,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         var NavController = findNavController(R.id.fragmentContainerView)
-        var bottonNavBar = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
+        var bottomNavBar = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
 
-        bottonNavBar.setupWithNavController(NavController)
+        bottomNavBar.setupWithNavController(NavController)
     }
 }

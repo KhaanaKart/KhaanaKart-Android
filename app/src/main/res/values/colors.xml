@@ -8,5 +8,5 @@
     <color name="secondary_theme_color">#DCBCC5</color>
     <color name="tertiary_theme_color">#F3E9EB</color>
     <color name="alternate_theme_color">#FFEED3</color>
-
+    <color name="border_color">#F4F4F4</color>
 </resources>

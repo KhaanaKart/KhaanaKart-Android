@@ -6,11 +6,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.denzcoskun.imageslider.constants.ScaleTypes
 import com.denzcoskun.imageslider.interfaces.ItemClickListener
 import com.denzcoskun.imageslider.models.SlideModel
 import com.example.khaanakart.R
+import com.example.khaanakart.adapters.PopularFoodsAdapter
 import com.example.khaanakart.databinding.FragmentHomeBinding
+import com.example.khaanakart.models.PopularFoodItem
 
 class HomeFragment : Fragment() {
 
@@ -55,6 +58,19 @@ class HomeFragment : Fragment() {
             }
 
         })
+
+        val foodList = listOf(
+            PopularFoodItem("Burger", 8.99, R.drawable.burger),
+            PopularFoodItem("Sandwich", 6.99, R.drawable.sandwich),
+            PopularFoodItem("Chow Mein", 11.99, R.drawable.chowmein),
+            PopularFoodItem("Salad", 8.99, R.drawable.salad),
+            PopularFoodItem("Samosa", 4.99, R.drawable.samosa),
+            PopularFoodItem("Omelette", 7.99, R.drawable.omelette)
+        )
+
+        val adapter = PopularFoodsAdapter(foodList)
+        binding.popularFoodsRecyclerView.layoutManager = LinearLayoutManager(requireContext())
+        binding.popularFoodsRecyclerView.adapter = adapter
     }
 
     companion object {

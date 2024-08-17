@@ -36,7 +36,7 @@
     <style name="primary_button">
         <item name="android:layout_width">320dp</item>
         <item name="android:layout_height">60dp</item>
-        <item name="android:background">@drawable/gradient_button</item>
+        <item name="android:background">@drawable/primary_gradient_button</item>
         <item name="android:fontFamily">@font/montserrat_bold</item>
         <item name="android:textColor">@color/secondary_theme_color</item>
         <item name="android:textSize">16sp</item>
