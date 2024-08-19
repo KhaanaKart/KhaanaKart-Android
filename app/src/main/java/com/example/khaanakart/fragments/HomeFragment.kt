@@ -30,6 +30,10 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
+        binding.viewMenuTextView.setOnClickListener {
+            val menuBottomSheetDialog = MenuBottomSheetFragment()
+            menuBottomSheetDialog.show(parentFragmentManager, null)
+        }
         return binding.root
     }
 

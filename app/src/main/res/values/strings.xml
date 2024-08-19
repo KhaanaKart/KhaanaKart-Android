@@ -38,4 +38,5 @@
     <string name="placeholder_int_text">17</string>
     <string name="placeholder_image_desc">Placeholder Image</string>
     <string name="proceed_button_text">Proceed</string>
+    <string name="menu_screen_title_text">Menu</string>
 </resources>
