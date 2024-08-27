@@ -23,18 +23,35 @@
             android:layout_height="match_parent"
             android:background="@color/white">
 
-            <ImageView
-                android:id="@+id/foodImagePopular"
-                android:layout_width="88dp"
-                android:layout_height="88dp"
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
-                android:contentDescription="@string/secondary_logo_desc"
-                android:scaleType="centerCrop"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="0dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.5"
-                tools:srcCompat="@tools:sample/avatars" />
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/foodImagePopular"
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:contentDescription="@string/secondary_logo_desc"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:srcCompat="@tools:sample/avatars" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
 
             <TextView
                 android:id="@+id/foodNamePopular"
@@ -46,7 +63,7 @@
                 style="@style/card_view_food_name"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/foodPricePopular"
-                app:layout_constraintStart_toEndOf="@+id/foodImagePopular"
+                app:layout_constraintStart_toEndOf="@+id/cardViewImage"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.5" />
 

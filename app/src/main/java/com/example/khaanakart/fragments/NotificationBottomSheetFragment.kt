@@ -11,7 +11,7 @@ import com.example.khaanakart.databinding.FragmentNotificationBottomSheetBinding
 import com.example.khaanakart.models.NotificationItemModel
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
-class NotificationBottomSheetFragment : BottomSheetDialogFragment() {
+class NotificationBottomSheetFragment: BottomSheetDialogFragment() {
 
     private val binding: FragmentNotificationBottomSheetBinding by lazy {
         FragmentNotificationBottomSheetBinding.inflate(layoutInflater)

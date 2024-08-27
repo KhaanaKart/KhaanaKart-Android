@@ -40,6 +40,7 @@
     <string name="proceed_button_text">Proceed</string>
     <string name="menu_screen_title_text">Menu</string>
     <string name="notifications_screen_title_text">Notifications</string>
+    <string name="checkout_screen_title_text">Checkout</string>
     <string name="recent_buy_text">Recent Buy</string>
     <string name="prev_bought_text">Previously Bought</string>
     <string name="buy_again_text">Buy Again</string>
@@ -50,6 +51,10 @@
     <string name="placeholder_long_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
     <string name="edit_text_content_desc">Edit Text</string>
     <string name="save_information_button_text">Save Information</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="checkout_payment_mode_text">Payment Mode</string>
+    <string name="cod_payment_mode_text">Cash On Delivery</string>
+    <string name="total_amount_text">Total Amount</string>
+    <string name="place_order_button_text">Place Order</string>
+    <string name="order_placed_success_text">Congrats! Your order is placed.</string>
+    <string name="go_home_button_text">Go Home</string>
 </resources>

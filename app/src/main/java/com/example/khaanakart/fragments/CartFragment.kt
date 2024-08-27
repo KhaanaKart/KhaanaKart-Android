@@ -1,11 +1,14 @@
 package com.example.khaanakart.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.khaanakart.CheckoutActivity
+import com.example.khaanakart.LoginActivity
 import com.example.khaanakart.R
 import com.example.khaanakart.adapters.CartAdapter
 import com.example.khaanakart.databinding.FragmentCartBinding
@@ -44,6 +47,11 @@ class CartFragment : Fragment() {
         val adapter = CartAdapter(cartList.toMutableList())
         binding.cartRecyclerView.layoutManager = LinearLayoutManager(requireContext())
         binding.cartRecyclerView.adapter = adapter
+
+        binding.proceedButton.setOnClickListener {
+            val intent = Intent(requireContext(), CheckoutActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     companion object {
