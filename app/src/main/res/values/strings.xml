@@ -57,4 +57,10 @@
     <string name="place_order_button_text">Place Order</string>
     <string name="order_placed_success_text">Congrats! Your order is placed.</string>
     <string name="go_home_button_text">Go Home</string>
+    <string name="short_desc_title_text">Short Description</string>
+    <string name="ingredients_title_text">Ingredients</string>
+    <string name="category_title_text">Category</string>
+    <string name="cuisine_title_text">Cuisine</string>
+    <string name="calories_title_text">Calories</string>
+    <string name="history_title_text">History</string>
 </resources>

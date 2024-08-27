@@ -71,7 +71,7 @@ class HomeFragment : Fragment() {
             FoodItemModel("Omelette", 7.99, R.drawable.omelette)
         )
 
-        val adapter = PopularFoodsAdapter(foodList)
+        val adapter = PopularFoodsAdapter(foodList, requireContext())
         binding.popularFoodsRecyclerView.layoutManager = LinearLayoutManager(requireContext())
         binding.popularFoodsRecyclerView.adapter = adapter
     }

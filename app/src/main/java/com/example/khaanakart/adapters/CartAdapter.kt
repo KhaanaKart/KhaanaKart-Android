@@ -46,21 +46,21 @@ class CartAdapter(private val cartList: MutableList<CartItemModel>): RecyclerVie
             }
         }
 
-        fun decreaseQuantity(position: Int) {
+        private fun decreaseQuantity(position: Int) {
             if (cartList[position].quantity > 1) {
                 cartList[position].quantity--
                 binding.quantityText.text = cartList[position].quantity.toString()
             }
         }
 
-        fun increaseQuantity(position: Int) {
+        private fun increaseQuantity(position: Int) {
             if (cartList[position].quantity < 10) {
                 cartList[position].quantity++
                 binding.quantityText.text = cartList[position].quantity.toString()
             }
         }
 
-        fun deleteItem(position: Int) {
+        private fun deleteItem(position: Int) {
             cartList.removeAt(position)
             notifyItemRemoved(position)
             notifyItemRangeChanged(position, cartList.size)

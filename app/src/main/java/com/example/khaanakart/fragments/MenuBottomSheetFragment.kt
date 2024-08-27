@@ -51,7 +51,7 @@ class MenuBottomSheetFragment : BottomSheetDialogFragment() {
             FoodItemModel("Hot Dog", 6.49, R.drawable.hot_dog)
         )
 
-        val adapter = MenuAdapter(foodList)
+        val adapter = MenuAdapter(foodList, requireContext())
         binding.menuRecyclerView.layoutManager = LinearLayoutManager(requireContext())
         binding.menuRecyclerView.adapter = adapter
 

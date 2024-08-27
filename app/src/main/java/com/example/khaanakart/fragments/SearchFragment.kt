@@ -40,10 +40,11 @@ class SearchFragment : Fragment() {
 
     private val filteredFoodList = mutableListOf<FoodItemModel>()
 
-    private val adapter = MenuAdapter(filteredFoodList)
+    private var adapter: MenuAdapter? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        adapter = MenuAdapter(filteredFoodList, requireContext())
     }
 
     override fun onCreateView(
@@ -67,7 +68,7 @@ class SearchFragment : Fragment() {
         filteredFoodList.clear()
         filteredFoodList.addAll(foodList)
 
-        adapter.notifyDataSetChanged()
+        adapter?.notifyDataSetChanged()
     }
 
     private fun setupSearchView() {
@@ -93,7 +94,7 @@ class SearchFragment : Fragment() {
             }
         }
 
-        adapter.notifyDataSetChanged()
+        adapter?.notifyDataSetChanged()
     }
 
     companion object {
