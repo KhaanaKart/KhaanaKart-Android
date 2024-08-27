@@ -5,29 +5,41 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.khaanakart.R
+import com.example.khaanakart.adapters.HistoryAdapter
+import com.example.khaanakart.adapters.MenuAdapter
+import com.example.khaanakart.databinding.FragmentHistoryBinding
+import com.example.khaanakart.models.FoodItemModel
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [HistoryFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class HistoryFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+
+    private val binding: FragmentHistoryBinding by lazy {
+        FragmentHistoryBinding.inflate(layoutInflater)
+    }
+
+    private val foodList = mutableListOf(
+        FoodItemModel("Burger", 8.99, R.drawable.burger),
+        FoodItemModel("Sandwich", 6.99, R.drawable.sandwich),
+        FoodItemModel("Chow Mein", 11.99, R.drawable.chowmein),
+        FoodItemModel("Salad", 8.99, R.drawable.salad),
+        FoodItemModel("Samosa", 4.99, R.drawable.samosa),
+        FoodItemModel("Omelette", 7.99, R.drawable.omelette),
+        FoodItemModel("Pizza", 12.99, R.drawable.pizza),
+        FoodItemModel("Pasta", 10.99, R.drawable.pasta),
+        FoodItemModel("Chicken Wings", 9.99, R.drawable.chicken_wings),
+        FoodItemModel("Quesadilla", 7.99, R.drawable.quesadilla),
+        FoodItemModel("Spring Rolls", 5.99, R.drawable.spring_roll),
+        FoodItemModel("Tacos", 8.99, R.drawable.taco),
+        FoodItemModel("Smoothie", 5.49, R.drawable.smoothie),
+        FoodItemModel("Brownie", 3.99, R.drawable.brownie),
+        FoodItemModel("Fries", 4.49, R.drawable.french_fries),
+        FoodItemModel("Waffle", 4.99, R.drawable.waffle),
+        FoodItemModel("Hot Dog", 6.49, R.drawable.hot_dog)
+    )
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
     }
 
     override fun onCreateView(
@@ -35,26 +47,13 @@ class HistoryFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_history, container, false)
+        val adapter = HistoryAdapter(foodList)
+        binding.historyRecyclerView.layoutManager = LinearLayoutManager(requireContext())
+        binding.historyRecyclerView.adapter = adapter
+        return binding.root
     }
 
     companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment HistoryFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            HistoryFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+
     }
 }

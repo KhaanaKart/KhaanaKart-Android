@@ -3,16 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="160dp">
+    android:layout_height="wrap_content"
+    android:background="@color/white">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginStart="4dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="4dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginBottom="8dp"
         app:cardCornerRadius="16dp"
+        app:cardElevation="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,58 +22,51 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/white">
+            android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/foodImagePopular"
+                android:id="@+id/historyFoodImage"
                 android:layout_width="88dp"
                 android:layout_height="88dp"
                 android:layout_marginStart="24dp"
-                android:contentDescription="@string/secondary_logo_desc"
-                android:scaleType="centerCrop"
+                android:contentDescription="@string/placeholder_image_desc"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.5"
                 tools:srcCompat="@tools:sample/avatars" />
 
             <TextView
-                android:id="@+id/foodNamePopular"
+                android:id="@+id/historyFoodName"
+                style="@style/card_view_food_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
                 android:text="@string/placeholder_string_text"
-                style="@style/card_view_food_name"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/foodPricePopular"
-                app:layout_constraintStart_toEndOf="@+id/foodImagePopular"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.5" />
+                app:layout_constraintStart_toEndOf="@+id/historyFoodImage"
+                app:layout_constraintTop_toTopOf="@+id/historyFoodImage" />
 
             <TextView
-                android:id="@+id/foodPricePopular"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="36dp"
-                android:text="@string/placeholder_double_text"
+                android:id="@+id/historyFoodPrice"
                 style="@style/card_view_food_price"
-                app:layout_constraintEnd_toEndOf="@+id/addToCartPopular"
-                app:layout_constraintStart_toStartOf="@+id/addToCartPopular"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/addToCartPopular"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="24dp"
-                android:layout_marginBottom="16dp"
-                style="@style/secondary_button"
-                android:text="@string/add_to_cart_button_text"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+                android:layout_marginStart="16dp"
+                android:text="@string/placeholder_double_text"
+                app:layout_constraintBottom_toBottomOf="@+id/historyFoodImage"
+                app:layout_constraintStart_toEndOf="@+id/historyFoodImage" />
 
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buyAgainButton"
+                style="@style/secondary_button"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginEnd="24dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/buy_again_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

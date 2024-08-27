@@ -50,8 +50,6 @@ class SearchFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-
 
         binding.searchMenuRecyclerView.layoutManager = LinearLayoutManager(requireContext())
         binding.searchMenuRecyclerView.adapter = adapter
@@ -89,7 +87,7 @@ class SearchFragment : Fragment() {
     private fun filterMenuItems(query: String) {
         filteredFoodList.clear()
 
-        foodList.forEachIndexed { index, food ->
+        foodList.forEachIndexed { _, food ->
             if(food.name.contains(query, ignoreCase = true)) {
                 filteredFoodList.add(food)
             }

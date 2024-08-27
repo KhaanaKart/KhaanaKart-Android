@@ -30,9 +30,10 @@
         android:layout_marginTop="16dp"
         android:background="@android:color/transparent"
         android:src="@drawable/arrow_back"
-        android:tint="@color/primary_theme_color"
+        android:contentDescription="@string/placeholder_image_desc"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/primary_theme_color" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/menuRecyclerView"
@@ -40,6 +41,7 @@
         android:layout_height="match_parent"
         android:layout_marginTop="104dp"
         android:layout_marginBottom="16dp"
+        tools:listitem="@layout/food_list_item"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

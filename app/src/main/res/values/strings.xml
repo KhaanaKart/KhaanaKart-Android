@@ -39,4 +39,16 @@
     <string name="placeholder_image_desc">Placeholder Image</string>
     <string name="proceed_button_text">Proceed</string>
     <string name="menu_screen_title_text">Menu</string>
+    <string name="recent_buy_text">Recent Buy</string>
+    <string name="prev_bought_text">Previously Bought</string>
+    <string name="buy_again_text">Buy Again</string>
+    <string name="profile_name_text">Name</string>
+    <string name="profile_address_text">Address</string>
+    <string name="profile_email_text">Email</string>
+    <string name="profile_phone_text">Phone</string>
+    <string name="placeholder_long_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+    <string name="edit_text_content_desc">Edit Text</string>
+    <string name="save_information_button_text">Save Information</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
