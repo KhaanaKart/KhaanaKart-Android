@@ -20,13 +20,9 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button2"
-        android:layout_width="320dp"
-        android:layout_height="60dp"
+        style="@style/primary_button"
         android:layout_marginBottom="16dp"
-        android:background="@drawable/primary_gradient_button"
-        android:fontFamily="@font/montserrat_semibold"
         android:text="@string/proceed_button_text"
-        android:textColor="@color/tertiary_theme_color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

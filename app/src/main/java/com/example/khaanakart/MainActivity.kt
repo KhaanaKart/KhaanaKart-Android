@@ -5,17 +5,29 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
+import com.example.khaanakart.databinding.ActivityMainBinding
+import com.example.khaanakart.fragments.NotificationBottomSheetFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
+
+    private val binding: ActivityMainBinding by lazy {
+        ActivityMainBinding.inflate(layoutInflater)
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
+        setContentView(binding.root)
 
-        var NavController = findNavController(R.id.fragmentContainerView)
-        var bottomNavBar = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
+        val navController = findNavController(R.id.fragmentContainerView)
+        val bottomNavBar = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
 
-        bottomNavBar.setupWithNavController(NavController)
+        bottomNavBar.setupWithNavController(navController)
+
+        binding.notificationsButton.setOnClickListener {
+            val notificationsBottomSheetDialog = NotificationBottomSheetFragment()
+            notificationsBottomSheetDialog.show(supportFragmentManager, null)
+        }
     }
 }

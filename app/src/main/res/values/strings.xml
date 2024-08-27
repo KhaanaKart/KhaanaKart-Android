@@ -39,6 +39,7 @@
     <string name="placeholder_image_desc">Placeholder Image</string>
     <string name="proceed_button_text">Proceed</string>
     <string name="menu_screen_title_text">Menu</string>
+    <string name="notifications_screen_title_text">Notifications</string>
     <string name="recent_buy_text">Recent Buy</string>
     <string name="prev_bought_text">Previously Bought</string>
     <string name="buy_again_text">Buy Again</string>
