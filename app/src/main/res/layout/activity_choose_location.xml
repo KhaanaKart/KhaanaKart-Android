@@ -31,6 +31,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
         android:background="@drawable/solid_text_field"
+        android:elevation="5dp"
         app:boxStrokeWidth="0dp"
         app:boxStrokeWidthFocused="0dp"
         app:endIconDrawable="@drawable/arrow_downward"
@@ -42,11 +43,11 @@
         <AutoCompleteTextView
             android:id="@+id/autoCompleteLocationList"
             android:layout_width="match_parent"
-            android:labelFor="@id/autoCompleteLocationList"
             android:layout_height="match_parent"
-            android:popupBackground="@color/white"
             android:fontFamily="@font/montserrat_regular"
             android:inputType="none"
+            android:labelFor="@id/autoCompleteLocationList"
+            android:popupBackground="@color/white"
             android:text="@string/auto_complete_placeholder" />
     </com.google.android.material.textfield.TextInputLayout>
 
