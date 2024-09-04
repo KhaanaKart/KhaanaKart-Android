@@ -82,7 +82,7 @@
                 android:layout_marginBottom="48dp"
                 android:paddingStart="16dp"
                 android:paddingEnd="16dp"
-                android:text="@string/buy_again_text"
+                android:text="@string/buy_again_button_text"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>

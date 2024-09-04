@@ -44,7 +44,8 @@
     <string name="checkout_screen_title_text">Checkout</string>
     <string name="recent_buy_text">Recent Buy</string>
     <string name="prev_bought_text">Previously Bought</string>
-    <string name="buy_again_text">Buy Again</string>
+    <string name="buy_again_button_text">Buy Again</string>
+    <string name="received_button_text">Received</string>
     <string name="profile_name_text">Name</string>
     <string name="profile_address_text">Address</string>
     <string name="profile_email_text">Email</string>

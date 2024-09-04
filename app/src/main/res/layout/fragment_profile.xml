@@ -162,7 +162,7 @@
     </LinearLayout>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/placeOrderButton"
+        android:id="@+id/saveInfoButton"
         style="@style/primary_button"
         android:layout_margin="8dp"
         android:layout_weight="1"
